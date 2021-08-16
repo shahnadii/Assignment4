@@ -1,0 +1,4 @@
+ <input class="searchBar" (keyup)="onKey($event)" type="text" autofocus/>
+   <button (click)="SearchButton()" >Search</button>
+   <br><br><br>
+   <app-videolisting [VideoList]="results"></app-videolisting>

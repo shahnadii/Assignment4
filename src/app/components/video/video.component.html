@@ -1,0 +1,25 @@
+<section class="mainContainer">
+  <div class="imgdiv">
+    <a href="https://www.dailymotion.com/videos/{{video.id}}">
+      <img src="{{video.thumbnail_360_url}}">
+    </a>
+  </div>
+  <div class="title">
+      <p>
+        <a href="https://www.dailymotion.com/video/{{video.id}}" target="_blank">
+          {{video.title}}</a>
+        </p>
+  </div>
+  <div class="owner">
+      <img src='{{video["owner.avatar_80_url"]}}'>
+      <p>{{video["owner.username"]}}</p>
+  </div>
+  <div class="details">
+      <span>Posted on: <b>{{video.created_time*1000 | date}}</b>    V</span>
+    
+      <span>iews: <b>{{video.views_total}}</b></span>
+  </div>
+  <div class="AddToPlaylistButton">
+      <button *ngIf="!isPlaylistMember" (click)="AddToPlaylist()" [disabled]="(ifClicked===true)">{{buttontext}}</button>
+  </div>
+</section>

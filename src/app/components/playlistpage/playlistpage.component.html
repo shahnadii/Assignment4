@@ -1,0 +1,8 @@
+<h1>My Playlist</h1>
+<button (click)="EmptyArray()" *ngIf="(myplaylist.length > 0) else showNoList">Clear</button>
+<ng-template #showNoList>
+  <p >
+  There is no video in the play list
+  </p>
+  </ng-template>
+<app-video [isPlaylistMember]="true" *ngFor="let p of myplaylist"[video]="p"></app-video>

@@ -1,0 +1,43 @@
+
+.imgdiv img{
+  max-width: 500px;
+}
+.mainContainer{
+  max-height: 500px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-row-gap: 100px;
+  background-color: darkgray;
+  padding: 20px;
+}
+.imgdiv{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.title{
+  font-size: 32px;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.owner{
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.details{
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.AddToPlaylistButton{
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
